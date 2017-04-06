@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | SubinY Blog</title>
+  <title>彻底理解原型链 (prototype chain)和Simple JavaScript Inheritance | SubinY Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="SubinY Blog">
-<meta property="og:url" content="http://yoursite.com/archives/page/3/index.html">
+  <meta name="description" content="彻底理解原型链 (prototype chain)在 ECMAScript 中，每个由构造器创建的对象拥有一个指向构造器 prototype 属性值的 隐式引用（implicit reference），这个引用称之为 原型（prototype）。进一步，每个原型可以拥有指向自己原型的 隐式引用（即该原型的原型），如此下去，这就是所谓的 原型链（prototype chain） （参考资源）。在具体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="彻底理解原型链 (prototype chain)和Simple JavaScript Inheritance">
+<meta property="og:url" content="http://yoursite.com/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/index.html">
 <meta property="og:site_name" content="SubinY Blog">
+<meta property="og:description" content="彻底理解原型链 (prototype chain)在 ECMAScript 中，每个由构造器创建的对象拥有一个指向构造器 prototype 属性值的 隐式引用（implicit reference），这个引用称之为 原型（prototype）。进一步，每个原型可以拥有指向自己原型的 隐式引用（即该原型的原型），如此下去，这就是所谓的 原型链（prototype chain） （参考资源）。在具体">
+<meta property="og:image" content="https://static.oschina.net/uploads/img/201702/07203338_ONPY.png">
+<meta property="og:image" content="https://static.oschina.net/uploads/img/201702/07203338_c6ZY.png">
+<meta property="og:updated_time" content="2017-04-06T02:11:25.747Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SubinY Blog">
+<meta name="twitter:title" content="彻底理解原型链 (prototype chain)和Simple JavaScript Inheritance">
+<meta name="twitter:description" content="彻底理解原型链 (prototype chain)在 ECMAScript 中，每个由构造器创建的对象拥有一个指向构造器 prototype 属性值的 隐式引用（implicit reference），这个引用称之为 原型（prototype）。进一步，每个原型可以拥有指向自己原型的 隐式引用（即该原型的原型），如此下去，这就是所谓的 原型链（prototype chain） （参考资源）。在具体">
+<meta name="twitter:image" content="https://static.oschina.net/uploads/img/201702/07203338_ONPY.png">
   
     <link rel="alternative" href="/atom.xml" title="SubinY Blog" type="application/atom+xml">
   
@@ -139,144 +146,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/03/15/jquery实现图片无缝轮播显示/" class="archive-article-date">
-  	<time datetime="2015-03-15T13:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/15/jquery实现图片无缝轮播显示/">jquery实现图片无缝轮播显示（面试笔试有用）</a>
+    <h1 class="article-title" itemprop="name">
+      彻底理解原型链 (prototype chain)和Simple JavaScript Inheritance
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jQ轮播图</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日常记录/" class="article-tag-list-link color5">日常记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/03/15/jQuery记忆与问题/" class="archive-article-date">
-  	<time datetime="2015-03-15T01:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-15</time>
+        
+        <a href="/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/" class="archive-article-date">
+  	<time datetime="2016-11-22T10:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/15/jQuery记忆与问题/">jQuery记忆与问题（面试笔试有用）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <h2 id="彻底理解原型链-prototype-chain"><a href="#彻底理解原型链-prototype-chain" class="headerlink" title="彻底理解原型链 (prototype chain)"></a>彻底理解原型链 (prototype chain)</h2><p>在 ECMAScript 中，每个由构造器创建的对象拥有一个指向构造器 prototype 属性值的 隐式引用（implicit reference），这个引用称之为 原型（prototype）。进一步，每个原型可以拥有指向自己原型的 隐式引用（即该原型的原型），如此下去，这就是所谓的 原型链（prototype chain） （参考资源）。在具体的语言实现中，每个对象都有一个 <strong>proto</strong> 属性来实现对原型的 隐式引用。程序清单 4说明了这一点。</p>
+<p>清单 4. 对象的 <strong>proto</strong> 属性和隐式引用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"> name </span>) </span>&#123; <span class="keyword">this</span>.name = name; &#125;</div><div class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</div><div class="line"><span class="comment">//对象的隐式引用指向了构造器的 prototype 属性，所以此处打印 true</span></div><div class="line"><span class="built_in">console</span>.log( p.__proto__ === Person.prototype );</div><div class="line"><span class="comment">//原型本身是一个 Object 对象，所以他的隐式引用指向了</span></div><div class="line"><span class="comment">// Object 构造器的 prototype 属性 , 故而打印 true</span></div><div class="line"><span class="built_in">console</span>.log(Person.prototype.__proto__ === <span class="built_in">Object</span>.prototype );</div><div class="line"><span class="comment">// 构造器 Person 本身是一个函数对象，所以此处打印 true</span></div><div class="line"><span class="built_in">console</span>.log( Person.__proto__ === <span class="built_in">Function</span>.prototype );</div></pre></td></tr></table></figure></p>
+<a id="more"></a><!--more-->
+<p>有了 原型链，便可以定义一种所谓的 属性隐藏机制，并通过这种机制实现继承。ECMAScript 规定，当要给某个对象的属性赋值时，解释器会查找该对象原型链中第一个含有该属性的对象（注：原型本身就是一个对象，那么原型链即为一组对象的链。对象的原型链中的第一个对象是该对象本身）进行赋值。反之，如果要获取某个对象属性的值，解释器自然是返回该对象原型链中首先具有该属性的对象属性值。图 1说名了这中隐藏机制：</p>
+<p>图 1. 原型链中的属性隐藏机制<br><img src="https://static.oschina.net/uploads/img/201702/07203338_ONPY.png" alt="img1"></p>
+<p>在图 1 中，object1-&gt;prototype1-&gt;prototype2 构成了 对象 object1 的原型链，根据上述属性隐藏机制，可以清楚地看到 prototype1 对象中的 property4 属性和 prototype2 对象中的 property3 属性皆被隐藏。理解了原型链，那么将非常容易理解 JS 中基于原型的继承实现原理，程序清单 5 是利用原型链实现继承的简单例子。</p>
+<p>清单 5. 利用原型链 Horse-&gt;Mammal-&gt;Animal 实现继承<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 声明 Animal 对象构造器</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>) </span>&#123; &#125;</div><div class="line"><span class="comment">// 将 Animal 的 prototype 属性指向一个对象，</span></div><div class="line"><span class="comment">// 亦可直接理解为指定 Animal 对象的原型</span></div><div class="line">Animal.prototype = &#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">"animal"</span>,</div><div class="line">  <span class="attr">weight</span>: <span class="number">0</span>,</div><div class="line">  <span class="attr">eat</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		alert( <span class="string">"Animal is eating!"</span> );</div><div class="line">		&#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 声明 Mammal 对象构造器</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Mammal</span>(<span class="params"></span>) </span>&#123; <span class="keyword">this</span>.name = <span class="string">"mammal"</span>; &#125;</div><div class="line"><span class="comment">// 指定 Mammal 对象的原型为一个 Animal 对象。</span></div><div class="line"><span class="comment">// 实际上此处便是在创建 Mammal 对象和Animal 对象之间的原型链</span></div><div class="line">Mammal.prototype = <span class="keyword">new</span> Animal();</div><div class="line"><span class="comment">// 声明 Horse 对象构造器</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Horse</span>(<span class="params">height,weight</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = <span class="string">"horse"</span>;</div><div class="line">  <span class="keyword">this</span>.height = height;</div><div class="line">  <span class="keyword">this</span>.weight = weight;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 将 Horse对象的原型指定为一个 Mamal 对象，继续构建 Horse 与 Mammal 之间的原型链</span></div><div class="line">Horse.prototype = <span class="keyword">new</span> Mammal();</div><div class="line"><span class="comment">// 重新指定 eat方法 , 此方法将覆盖从 Animal 原型继承过来的 eat 方法</span></div><div class="line">Horse.prototype.eat = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  alert( <span class="string">"Horse is eating grass!"</span> );</div><div class="line">&#125;</div><div class="line"><span class="comment">// 验证并理解原型链</span></div><div class="line"><span class="keyword">var</span> horse = <span class="keyword">new</span> Horse( <span class="number">100</span>, <span class="number">300</span> );</div><div class="line"><span class="built_in">console</span>.log(horse.__proto__ === Horse.prototype);</div><div class="line"><span class="built_in">console</span>.log( Horse.prototype.__proto__ === Mammal.prototype );</div><div class="line"><span class="built_in">console</span>.log( Mammal.prototype.__proto__ === Animal.prototype );</div></pre></td></tr></table></figure></p>
+<p>理解清单 5 中对象原型继承逻辑实现的关键在于 Horse.prototype = new Mammal() 和 Mammal.prototype = new Animal() 这两句代码。首先，等式右边的结果是构造出一个临时对象，然后将这个对象赋值给等式左边对象的 prototype 属性。也就是说将右边新建的对象作为左边对象的原型。读者可以将这两个等式替换到相应的程序清单 5 代码最后两行的等式中自行领悟。</p>
+<h2 id="JavaScript-类式继承的实现方法"><a href="#JavaScript-类式继承的实现方法" class="headerlink" title="JavaScript 类式继承的实现方法"></a>JavaScript 类式继承的实现方法</h2><p>从代码清单 5 可以看出，基于原型的继承方式，虽然实现了代码复用，但其行文松散且不够流畅，可阅读性差，不利于实现扩展和对源代码进行有效地组织管理。不得不承认，类式继承方式在语言实现上更具健壮性，且在构建可复用代码和组织架构程序方面具有明显的优势。这使得程序员们希望寻找到一种能够在 JavaScript 中以类式继承风格进行编码的方法途径。从抽象的角度来讲，既然类式继承和原型继承都是为实现面向对象而设计的，并且他们各自实现的载体语言在计算能力上是等价的 ( 因为图灵机的计算能力与 Lambda 演算的计算能力是等价的 )，那么能不能找到一种变换，使得原型式继承语言通过该变换实现具有类式继承编码的风格呢？</p>
+<p>目前一些主流的 JS 框架都提供了这种转换机制，也即类式声明方法，比如 Dojo.declare()、Ext.entend() 等等。用户使用这些框架，可以轻易而友好地组织自己的 JS 代码。其实，在众多框架出现之前，JavaScript 大师 Douglas Crockford 最早利用三个函数对 Function 对象进行扩展，实现了这种变换，关于它的实现细节可以（参考资源）。此外还有由 Dean Edwards实现的著名的 Base.js（参考资源）。值得一提的是，jQuery 之父 John Resig 在搏众家之长之后，用不到 30 行代码便实现了自己的 Simple Inheritance。使用其提供的 extend 方法声明类非常简单。程序清单 6是使用了 Simple Inheritance库实现类的声明的例子。其中最后一句打印输出语句是对 Simple Inheritance实现类式继承的最好说明。</p>
+<p>清单 6. 使用 Simple Inheritance 实现类式继承<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 声明 Person 类</span></div><div class="line"><span class="keyword">var</span> Person = Class.extend( &#123;</div><div class="line">  <span class="attr">_issleeping</span>: <span class="literal">true</span>,</div><div class="line">  <span class="attr">init</span>: <span class="function"><span class="keyword">function</span>(<span class="params"> name </span>) </span>&#123; <span class="keyword">this</span>._name = name; &#125;,</div><div class="line">  <span class="attr">isSleeping</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">this</span>._issleeping;</div><div class="line">  &#125;</div><div class="line">&#125; );</div><div class="line">  <span class="comment">// 声明 Programmer 类，并继承 Person</span></div><div class="line"><span class="keyword">var</span> Programmer = Person.extend( &#123;</div><div class="line">  <span class="attr">init</span>: <span class="function"><span class="keyword">function</span>(<span class="params"> name, issleeping </span>) </span>&#123;</div><div class="line">  <span class="comment">// 调用父类构造函数</span></div><div class="line">  <span class="keyword">this</span>._super( name );</div><div class="line">  <span class="comment">// 设置自己的状态</span></div><div class="line">  <span class="keyword">this</span>._issleeping = issleeping;</div><div class="line">  &#125;</div><div class="line">&#125; );</div><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person( <span class="string">"张三"</span> );</div><div class="line"><span class="keyword">var</span> diors = <span class="keyword">new</span> Programmer( <span class="string">"张江男"</span>, <span class="literal">false</span> );</div><div class="line"><span class="comment">// 打印 true</span></div><div class="line"><span class="built_in">console</span>.log( person.isSleeping() );</div><div class="line"><span class="comment">// 打印 false</span></div><div class="line"><span class="built_in">console</span>.log( diors.isSleeping() );</div><div class="line"><span class="comment">// 此处全为 true，故打印 true</span></div><div class="line"><span class="built_in">console</span>.log( person <span class="keyword">instanceof</span> Person &amp;&amp; person <span class="keyword">instanceof</span> Class &amp;&amp; diors <span class="keyword">instanceof</span> Programmer &amp;&amp;</div><div class="line">diors <span class="keyword">instanceof</span> Person &amp;&amp; diors <span class="keyword">instanceof</span> Class );</div></pre></td></tr></table></figure></p>
+<p>如果您已对原型、函数构造器、闭包和基于上下文的 this 有了充分的理解，那么理解 Simple Inheritance 的实现原理也并非相当困难。从本质上讲，var Person = Class.extend(…)该语句中，左边的 Person 实际上是获得了由 Class 调用 extend 方法返回的一个构造器，也即一个 function 对象的引用。顺着这个思路，我们继续介绍 Simple Inheritance 是如何做到这一点，进而实现了由原型继承方式到类式继承方式的转换的。图 2是 Simple Inheritance 的源码及其附带注释。为了方便理解，用中文对代码逐行补充说明。</p>
+<p>图 2.Simple Inheritance 源码解析<br><img src="https://static.oschina.net/uploads/img/201702/07203338_c6ZY.png" alt="img2"></p>
+<p>抛开代码第二部分，整体连贯地考察第一和第三部分会发现，extend 函数的根本目的就是要构造一个具有新原型属性的新构造器。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/12/15/JS进阶/" class="archive-article-date">
-  	<time datetime="2014-12-15T12:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/12/15/JS进阶/">JS基础笔记（面试笔试有用）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -288,234 +199,108 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
+        			<a href="/categories/工作记录/" class="article-tag-list-link color5">工作记录</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/12/15/AJAX笔记/" class="archive-article-date">
-  	<time datetime="2014-12-15T12:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-15</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/12/15/AJAX笔记/">JS基础笔记（面试笔试有用）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ajax</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jsonp</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/12/11/JS基础笔记（面试笔试有用）/" class="archive-article-date">
-  	<time datetime="2014-12-11T10:23:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/12/11/JS基础笔记（面试笔试有用）/">JS基础笔记（面试笔试有用）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/12/10/HTML5项目笔记/" class="archive-article-date">
-  	<time datetime="2014-12-10T04:20:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/12/10/HTML5项目笔记/">HTML5项目笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">HTML，CSS，WebStrome</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/12/08/HTML+CSS笔记/" class="archive-article-date">
-  	<time datetime="2014-12-08T04:20:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/12/08/HTML+CSS笔记/">HTML+CSS笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">HTML，CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端学习知识点/" class="article-tag-list-link color3">前端学习知识点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+    <a href="/2016/11/22/ajax加载进去的内容绑定事件不生效/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          ajax加载进去的内容绑定事件不生效
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/11/22/原型链的个人分析/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">原型链的个人分析</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
-  
+
 
 
           </div>
@@ -539,8 +324,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
