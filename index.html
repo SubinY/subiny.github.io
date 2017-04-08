@@ -448,29 +448,30 @@
 
 
   
-    <article id="post-bash命令和vi编辑器命令汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-使用angular做微信内html5开发时碰到的两个坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/02/bash命令和vi编辑器命令汇总/">bash命令和vi编辑器命令汇总</a>
+      <a class="article-title" href="/2016/06/28/使用angular做微信内html5开发时碰到的两个坑/">使用angular做微信内html5开发时碰到的两个坑</a>
     </h1>
   
 
         
-        <a href="/2015/11/02/bash命令和vi编辑器命令汇总/" class="archive-article-date">
-  	<time datetime="2015-11-02T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
+        <a href="/2016/06/28/使用angular做微信内html5开发时碰到的两个坑/" class="archive-article-date">
+  	<time datetime="2016-06-28T10:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>bash命令（Linux 默认使用 bash，Git内置了bash）<br>
+        <p>1、微信支付授权的url在SPA内不会正确改变。</p>
+<p>简单的说就是有页面A、B、C，C为支付页面，当从A进入SPA时，以A&gt;B&gt;C的顺序在页面C调用微信js接口支付，提示地址未授权而且url竟然是A的；以B&gt;C的顺序，在页面C取到的url是B的，最恶心的是该情况只会出现在ios系统的微信内，安卓的SPA拿到的url是正确的。当时想到的解决方案就是在angular入口的地址后紧跟?，然后调用微信js支付时微信会认为?后均为页面参数，不会对授权的url有影响。<br>
         
-          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/#more">more >></a>
+          <a class="article-more-a" href="/2016/06/28/使用angular做微信内html5开发时碰到的两个坑/#more">more >></a>
         
       
 
@@ -484,7 +485,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">微信</a>
         		</li>
       		
 		</ul>
@@ -505,7 +510,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/06/28/使用angular做微信内html5开发时碰到的两个坑/">展开全文 >></a>
         </p>
       
 
@@ -598,29 +603,29 @@
 
 
   
-    <article id="post-setInterval的返回值类型为什么为数值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-bash命令和vi编辑器命令汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/15/setInterval的返回值类型为什么为数值/">setInterval的返回值类型为什么为数值?</a>
+      <a class="article-title" href="/2015/11/02/bash命令和vi编辑器命令汇总/">bash命令和vi编辑器命令汇总</a>
     </h1>
   
 
         
-        <a href="/2015/10/15/setInterval的返回值类型为什么为数值/" class="archive-article-date">
-  	<time datetime="2015-10-15T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-15</time>
+        <a href="/2015/11/02/bash命令和vi编辑器命令汇总/" class="archive-article-date">
+  	<time datetime="2015-11-02T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">btn[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> timer = <span class="literal">null</span>;</div><div class="line">  timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'a'</span>);</div><div class="line">  &#125;,<span class="number">1000</span>)</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);  <span class="comment">//返回的是一个number数据类型</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>bash命令（Linux 默认使用 bash，Git内置了bash）<br>
         
-          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/#more">more >></a>
+          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/#more">more >></a>
         
       
 
@@ -634,11 +639,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -650,7 +651,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端面试/" class="article-tag-list-link color5">前端面试</a>
+        			<a href="/categories/工作记录/" class="article-tag-list-link color5">工作记录</a>
         		</li>
       		
 		</ul>
@@ -659,7 +660,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/">展开全文 >></a>
+          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/">展开全文 >></a>
         </p>
       
 
@@ -837,30 +838,29 @@
 
 
   
-    <article id="post-少见问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-setInterval的返回值类型为什么为数值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/03/少见问题/">少见问题</a>
+      <a class="article-title" href="/2015/10/15/setInterval的返回值类型为什么为数值/">setInterval的返回值类型为什么为数值?</a>
     </h1>
   
 
         
-        <a href="/2015/08/03/少见问题/" class="archive-article-date">
-  	<time datetime="2015-08-03T05:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-03</time>
+        <a href="/2015/10/15/setInterval的返回值类型为什么为数值/" class="archive-article-date">
+  	<time datetime="2015-10-15T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>【button的宽高跟别的行内块元素有区别】<br>1、<code>&lt;input type=&quot;buttom&quot;&gt;&lt;/input&gt;</code>  和<code>&lt;button&gt;&lt;/button&gt;</code></p>
-<p>button属性的元素会自带类似box-sizing:border-box属性；<br>如果设置固定宽度在外加padding值，宽高=padding值+内容宽高<br>
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">btn[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> timer = <span class="literal">null</span>;</div><div class="line">  timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'a'</span>);</div><div class="line">  &#125;,<span class="number">1000</span>)</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);  <span class="comment">//返回的是一个number数据类型</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2015/08/03/少见问题/#more">more >></a>
+          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/#more">more >></a>
         
       
 
@@ -874,7 +874,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">其他</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
         		</li>
       		
 		</ul>
@@ -886,7 +890,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/日常记录/" class="article-tag-list-link color5">日常记录</a>
+        			<a href="/categories/前端面试/" class="article-tag-list-link color5">前端面试</a>
         		</li>
       		
 		</ul>
@@ -895,7 +899,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/08/03/少见问题/">展开全文 >></a>
+          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/">展开全文 >></a>
         </p>
       
 
@@ -999,10 +1003,6 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">ajax</a>
               </li>
              
@@ -1011,7 +1011,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS，WebStrome</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1023,11 +1023,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS，WebStrome</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1039,11 +1039,23 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">插件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">其他</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">angular</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">微信</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1051,7 +1063,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color3">其他</a>
               </li>
              
               <li class="article-tag-list-item">
