@@ -26,7 +26,7 @@
 浏览器的API  web sockets，只有在支持web socket协议的服务器上才能正常工作。
 
 直接交给后台，后台不存在跨域情况">
-<meta property="og:updated_time" content="2017-04-12T02:49:04.320Z">
+<meta property="og:updated_time" content="2017-04-12T05:44:21.236Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试题整理（1）">
 <meta name="twitter:description" content="1、除了jsonp，你还了解哪些跨域解决办法？答：
@@ -208,6 +208,10 @@
 <h3 id="9、实际工作上怎么处理兼容性问题？"><a href="#9、实际工作上怎么处理兼容性问题？" class="headerlink" title="9、实际工作上怎么处理兼容性问题？"></a>9、实际工作上怎么处理兼容性问题？</h3><p>答：通过HTML5的底层框架来屏蔽不同浏览器的兼容问题，所有的HTML5应用在框架之上来开发。像国外的Bootstrap、jQuery UI等都是很好的UI框架，Modernizr.js也是解决浏览器不兼容个h5,css3的问题</p>
 <h3 id="10、你遇到bug，怎么解决"><a href="#10、你遇到bug，怎么解决" class="headerlink" title="10、你遇到bug，怎么解决"></a>10、你遇到bug，怎么解决</h3><p>答：浏览器都自带控制台，通过看控制台的错误去具体判断什么类型的错误，如果控制台不报错，但又达不到想要的结果，通过打断点去进一步细查代码中哪里有误，要么就换个思路去处理。</p>
 <h3 id="11、你的学习途径，如何系统学？"><a href="#11、你的学习途径，如何系统学？" class="headerlink" title="11、你的学习途径，如何系统学？"></a>11、你的学习途径，如何系统学？</h3><h3 id="12、以前的项目怎么打包上线的"><a href="#12、以前的项目怎么打包上线的" class="headerlink" title="12、以前的项目怎么打包上线的"></a>12、以前的项目怎么打包上线的</h3><p>答：通过自动化编译工具，把文件进行合并，压缩等操作，达到通过少量的 HTTP 请求获取到所需要的前端资源了, 节省流量, 加快页面加载速度。</p>
+<h3 id="13、组件和模块的区别？"><a href="#13、组件和模块的区别？" class="headerlink" title="13、组件和模块的区别？"></a>13、组件和模块的区别？</h3><p>答：模块一般说的是功能，一个功能作为一个模块。比如注册功能，整个这个流程是一个模块。编程模块化有助于并行开发，相互不影响，能单独进行功能测试，所<br>有模块都开发完成后，在集成到一起进行集成测试，然后交付。现在模块化开发很流行，一个团队开发，基本上一个人负责一块，最后再组合到一起。组件化则<br>更接近编码，将页面拆分成几个多个可服用的组件。组件是单一功能的代码片段，可以通过参数来显示出不同的状态，建议稍微看下react，组件化做的很详细<br>。组件化就类似于积木一样，开发的最后结果是最终程序，但实际上是开发的单个积木零件，最后组合到一起。组件化能提高代码的复用率，但感觉后期维护性<br>不那么好。一旦需求变更，可能需要做较大改动。</p>
+<h3 id="14、websocket-localstorage-你是用在什么地方"><a href="#14、websocket-localstorage-你是用在什么地方" class="headerlink" title="14、websocket localstorage 你是用在什么地方"></a>14、websocket localstorage 你是用在什么地方</h3><p>答：websocket用于实时通信，后者用法类似cookie  </p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2011/09/html5-localstorage" target="_blank" rel="external">参考链接</a></p>
+<h3 id="15、cookie是什么？"><a href="#15、cookie是什么？" class="headerlink" title="15、cookie是什么？"></a>15、cookie是什么？</h3><p>答：浏览器每次请求都会在请求头里带上一个cookie给服务器，服务器拿到cookie识别具体信息是否第一次登陆等操作，再把响应头返回给浏览器让浏览器去渲染页<br>面，一般用在用户登录是否自动登录，存取购物车商品信息用作支付时辨别。</p>
 
       
 
@@ -401,15 +405,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">jsonp</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -417,11 +417,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">jsonp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -433,11 +437,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -445,11 +453,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔试</a>
+                <a href="javascript:void(0)" class="js-tag color1">jQ轮播图</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color3">笔试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -461,11 +469,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">jQ轮播图</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
