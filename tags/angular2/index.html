@@ -6,18 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JS基础笔记（面试笔试有用） | SubinY Blog</title>
+  <title>Tag: angular2 | SubinY Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="【AJAX标准写法】(记忆)1234567891011121314151617181920// 创建xhrif(window.XMLHttpRequest)&amp;#123;            //  5种判断方式（window,typeof,try-catch,in,判断浏览器）	var xhr = new XMLHttpRequest();&amp;#125; else &amp;#123;	var xhr =">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JS基础笔记（面试笔试有用）">
-<meta property="og:url" content="http://yoursite.com/2014/12/15/AJAX笔记/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="SubinY Blog">
+<meta property="og:url" content="http://yoursite.com/tags/angular2/index.html">
 <meta property="og:site_name" content="SubinY Blog">
-<meta property="og:description" content="【AJAX标准写法】(记忆)1234567891011121314151617181920// 创建xhrif(window.XMLHttpRequest)&amp;#123;            //  5种判断方式（window,typeof,try-catch,in,判断浏览器）	var xhr = new XMLHttpRequest();&amp;#125; else &amp;#123;	var xhr =">
-<meta property="og:updated_time" content="2017-04-01T05:26:33.349Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS基础笔记（面试笔试有用）">
-<meta name="twitter:description" content="【AJAX标准写法】(记忆)1234567891011121314151617181920// 创建xhrif(window.XMLHttpRequest)&amp;#123;            //  5种判断方式（window,typeof,try-catch,in,判断浏览器）	var xhr = new XMLHttpRequest();&amp;#125; else &amp;#123;	var xhr =">
+<meta name="twitter:title" content="SubinY Blog">
   
     <link rel="alternative" href="/atom.xml" title="SubinY Blog" type="application/atom+xml">
   
@@ -143,85 +139,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-AJAX笔记" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      JS基础笔记（面试笔试有用）
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/04/16/angular2/" class="archive-article-date">
+  	<time datetime="2017-04-16T08:29:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-16</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/04/16/angular2/">angular2</a>
     </h1>
   
 
-        
-        <a href="/2014/12/15/AJAX笔记/" class="archive-article-date">
-  	<time datetime="2014-12-15T12:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>【AJAX标准写法】(记忆)<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 创建xhr</span></div><div class="line"><span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)&#123;            <span class="comment">//  5种判断方式（window,typeof,try-catch,in,判断浏览器）</span></div><div class="line">	<span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">	<span class="keyword">var</span> xhr = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 连接</span></div><div class="line">xhr.open(<span class="string">"get"</span>,url,<span class="literal">true</span>);</div><div class="line"><span class="comment">// 发送</span></div><div class="line">xhr.send();</div><div class="line"><span class="comment">// 接收</span></div><div class="line">xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(xhr.readyState == <span class="number">4</span>)&#123;</div><div class="line">		<span class="keyword">if</span>(xhr.status &gt;= <span class="number">200</span> &amp;&amp; xhr.status &lt; <span class="number">300</span> || xhr.status == <span class="number">304</span>)&#123;  </div><div class="line">			alert(xhr.responseText);    <span class="comment">// 返回文本内容</span></div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			alert(xhr.status)        <span class="comment">// 如果前面有错误则返回404</span></div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<a id="more"></a><!--more-->
-<p>【jsonp封装注意地方】(url,data,cbName,success,error,timeout)<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">options</span>)</span>&#123;</div><div class="line">    options = options || &#123;&#125;;</div><div class="line">    </div><div class="line">    <span class="keyword">if</span>(!options.url) <span class="keyword">return</span>;</div><div class="line">    options.data = options.data || &#123;&#125;;</div><div class="line">    options.cbName = options.cbName || <span class="string">"cb"</span>;   <span class="comment">// 不同的搜索引擎的回调函数不一样 百度 "cb" 360 "callback"</span></div><div class="line">    options.timeout = options.timeout || <span class="number">0</span>;</div><div class="line">    </div><div class="line">    <span class="keyword">var</span> fnName = (<span class="string">"jsonp_"</span> + <span class="built_in">Math</span>.random()).replace(<span class="string">"."</span>,<span class="string">""</span>);   <span class="comment">// 给回调函数添加随机因子</span></div><div class="line">    </div><div class="line">    <span class="keyword">var</span> arr = [];</div><div class="line">    options.data[options.cbName] = fnName;     <span class="comment">// 添加回调函数</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> name <span class="keyword">in</span> options.data)&#123;</div><div class="line">        arr.push(name + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(options.data[name]));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> str = arr.join(<span class="string">"&amp;"</span>);</div><div class="line">    </div><div class="line">    <span class="comment">//2 全局函数</span></div><div class="line">    <span class="built_in">window</span>[fnName] = <span class="function"><span class="keyword">function</span>(<span class="params">json</span>)</span>&#123;    <span class="comment">// window[fnName]为全局函数，局部函数声明全局变量用window好维护</span></div><div class="line">                        <span class="comment">// 这里的json，是fnName这个回调函数返回过来的数据（默认）</span></div><div class="line">    </div><div class="line">        options.success &amp;&amp; options.success(json);</div><div class="line">        <span class="built_in">window</span>[fnName] = <span class="literal">null</span>;        <span class="comment">// 把函数清空，释放内存，减少浏览器性能的消耗</span></div><div class="line">        oHead.removeChild(oS);        <span class="comment">// 每次调用全局函数，清除head头里面的script标签</span></div><div class="line">        clearTimeout(timer);</div><div class="line">    &#125;;</div><div class="line">    </div><div class="line">    <span class="comment">//1 创建script</span></div><div class="line">    <span class="keyword">var</span> oS = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</div><div class="line">    oS.src = options.url + <span class="string">"?"</span> + str;</div><div class="line">    <span class="keyword">var</span> oHead = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>];</div><div class="line">    oHead.appendChild(oS);</div><div class="line">    </div><div class="line">    <span class="keyword">if</span>(options.timeout)&#123;</div><div class="line">        <span class="keyword">var</span> timer = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">            options.error &amp;&amp; options.error();</div><div class="line">            <span class="built_in">window</span>[fnName] = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;        <span class="comment">// 接受超时，要把全局函数赋值为空函数，不然会报错</span></div><div class="line">            oHead.removeChild(oS);</div><div class="line">        &#125;,options.timeout);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>【ajax的上传方式get post】<br>1、 get : 有缓存    post : 没缓存（相对安全，信息不会暴露在地址栏）</p>
-<p>【表单】(刷新整个页面)<br>1、表单三要素   （一）action:地址 （二）name:上传的名字  （三）value:上传的值</p>
-<p>2、method ———  get:  数据在地址栏上显示   不安全  32K<br>             post:  数据隐藏        相对安全    1G</p>
-<p>【缓存问题】<br>1、缓存： 浏览器对同一个的地址只会访问一次，再次加载也是重新记录上一次的东西 （IE缓存严重）</p>
-<p>   解决： 让地址不一样     ———————–（1）添加随机数   t=Math.random();<br>               ———————–（2）时间戳 new Date().getTime();</p>
-<p>【try catch】(一般不用，性能差)<br>1、<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line"><span class="comment">// 可能出错代码</span></div><div class="line">&#125; <span class="keyword">catch</span>(e)&#123;</div><div class="line"><span class="comment">// 补救代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>catch里的e参数  必须有，获取报错信息</p>
-<font color="red">【typeof特殊用法】</font>12.22<br>1、<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(a)           <span class="comment">// 报错</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a);     <span class="comment">// 返回undefine，但不报错</span></div></pre></td></tr></table></figure><br><br><strong><strong><strong>*</strong></strong></strong>用于兼容判断IE，不报错<br><br>2、（面试）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> (<span class="keyword">typeof</span> a))    <span class="comment">//   string</span></div></pre></td></tr></table></figure><br><br>【后台文件传过来的json的一些注意事项】<br>1、<font color="red">后台传输过来的数据一定是string类型，如果要通过JS接收后台数据就要转换指定的类型  eval(‘(‘+json+’)’); <strong>(jq方法接收数据不能用eval，不然会报错)</strong></font>
-
-<font color="red">JSON.parse(json字符串)</font><br>2、AJAX解析后台资源，通过JSON.parse（）转换  等同于  <code>eval(&quot;(&quot;+json+&quot;)&quot;)</code>，后者动态函数，要做赋值操作，不然报错;<br><br>json转string】<br>    2、<code>JSON.stringify(json);</code>  (固定写法)但不兼容IE 6 7<br><br>json转num】<br>    3、<code>eval(&#39;(&#39;+json+&#39;)&#39;);       // 因为json是大括号包着，但有大括号系统会去寻找上边的是否缺少东西如是否缺少for function if等语句，会报错
-                          // 所以要在json外面添加（json）</code><br><br>json标准格式】<br>    4、  属性名必须是双引号，值如果是字符串也要双引号，但如果要用单引号的话，外面要用转义字符/‘abc/‘<br><br><font color="red">【undefined 和 not defined】</font><br>1、undefined是JavaScript语言中定义的五个原始类中的一个，换句话说，undefined并不是程序报错，而是程序允许的一个值。<br><br>not defined是javascript在运行我们的javascript代码时，遇到没有定义就用来运算的变量或者变量是个方法时报出来的错误。<br><br>【编码方式】<br>1、编码  <code>encodeURIComponent(&#39;str&#39;)&#39;</code>   中文编码成ASCII码<br><br>1、解码  <code>decodeURIComponent(&#39;%21%323%234&#39;)&#39;</code><br><br>地址栏里面只能是ASCII编码组成，如果有中文要进行编码操作<br><br><br>【HTTP状态码】 三个数字组成 第一位代表类型<br><br>1XX 请求已经接受，正在处理<br>2XX 成功<br>3XX 重定向  （3以内只有304成功（第二次打开浏览器，会把自己第一次的缓存与服务器相关的东西的最后修改时间进行对比，如果相等就返回304））<br>4XX 错误        ———&gt;前台错误<br>5XX 服务器错误        ———&gt;后台错误  （503错误，服务器超载，内存被塞满，例子：12306太大访问量，就会出现503错误）<br><br>【eval】<br>1、标准格式  <code>eval(&quot;(&quot;+str+&quot;)&quot;)</code><br><br><font color="red">【replace】</font><br>1、字符串替换    <code>str.replace(&quot;被替换的字符串&quot;，&quot;替换者&quot;)</code><br><br>【80端口】<br>1、所有网页都默认是80端口<br><br>【jsonp】<br>1、JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题。<br><font color="red"><br>写法：<br>1、创建一个script标签<br>2、定义一个全局函数<br></font><br>跨域:只要域名 端口 协议任意一个不同就算跨域  （后台不存在跨域问题，只有前台）前端跨域时，数据必须有名接受，没名字的数据前端拿不了，只能通过后台中转<br><br>网址的组成:<br><br> http://  www       .520it     .com      :80    /index.html<br> 协议     二级域名  一级域名   域名后缀  端口    资源地址<br><br>ajax跨域解决方法（逐步深入理解跨域实现原理）<br>1. Script的src方式加载js文件（script可以引入任意的文件(通过script引入地址的方式获取其他服务器上的信息)）<br>2. 加载的js文件内进行函数调用<br>3. 数据以函数参数的形式传递<br>4. 回调函数中获取参数数据（回调函数就是下面的show把json的东西返回给页面）<br><br><code>https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=aaa&amp;cb=show</code><br><br>wd: word 关键字<br>cb: callback 回调函数<br><br>img标签的src不用通过appendChild() 就可以访问src地址<br>script等其他标签  都不能 必须添加<br><br><font color="red">【ajax与jsonp是两回事】</font>
-
-<p>【window a】<br>1、在局部函数内定义全局变量  用window去定义，在局部函数里这样写容易维护</p>
-<p>(前提要调用局部函数，才会产生全局变量)</p>
-<p>2、 eg<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> b = <span class="number">3</span>;        <span class="keyword">var</span> 一直为局部变量</div><div class="line">  <span class="built_in">console</span>.log(b);</div><div class="line">&#125;</div><div class="line">a();  </div><div class="line"><span class="built_in">console</span>.log(b);         <span class="comment">//最后打印1,然后报错</span></div></pre></td></tr></table></figure></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">window</span>.b = <span class="number">3</span>;        <span class="built_in">window</span>.b 要调用后才能为全局变量</div><div class="line">  <span class="built_in">console</span>.log(b);</div><div class="line">&#125;</div><div class="line">a();  </div><div class="line"><span class="built_in">console</span>.log(b);    <span class="comment">//最后打印1,1</span></div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">window</span>.b = <span class="number">3</span>;        <span class="built_in">window</span>.b 要调用后才能为全局变量</div><div class="line">  <span class="built_in">console</span>.log(b);</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(b);</div><div class="line">a();  </div><div class="line"><span class="built_in">console</span>.log(b);        <span class="comment">//最后报错</span></div></pre></td></tr></table></figure>
-<p>【绑定】(绑定多个事件)<br>（false：代表冒泡    true：代表捕获   （浏览器事件流就是指冒泡，捕获））<br>1、obj.addEventListener(“事件名”，函数,false)     // IE 9+ </p>
-<p>eg: <code>document.addEventListener(&quot;click&quot;,fn,false);</code></p>
-<p>2、<code>obj.attachEvent(&quot;onclick&quot;,fn)    // IE 6 7 8</code></p>
-<p>【网络延时】（onload 是 window img script的属性）<br>1、可以用obj.onload方法去包裹需要服务器返回的数据，但不兼容IE   (“onload” in obj)  判断兼容方法</p>
-<pre><code>IE用obj.onreadystatechange
-</code></pre><p>2、因为JS是先加载页面的标签和图片后再执行 JS代码， 如果window.onload = function(){ img.onload = function(){console.log(1);}};</p>
-<font color="red"><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong>不会读取到console.log(1); </font>
-
-<p>【浏览器默认行为与绑定解绑事件的混合使用】<br>1、event.preventDefault    和  return false   都可以取消默认行为</p>
-<p>【事件委托】（提高效率，不用循环多次）<br>1、原理：冒泡   （给对做事件的元素的最大父亲添加对应事件,点击子元素弹出指定元素）<br>event.srcElement    兼容chrome ie<br>event.target         兼容chrome oz</p>
-<p><code>var oSrc = event.srcElement || event.target</code></p>
-<p>【target事件和currentTarget】（看事件委托内含高级排他）<br>1、target在事件流的目标阶段；currentTarget在事件流的捕获，目标及冒泡阶段。只有当事件流处在目标阶段的时候，<br>    两个的指向才是一样的， 而当处于捕获和冒泡阶段的时候，target指向被单击的对象而currentTarget指向当前事件活动的对象（一般为父级）。</p>
-<p>2、target.id  、 target.tagName</p>
-<p>eg:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ul.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> e = e || event;</div><div class="line">    <span class="keyword">var</span> oSrc = e.target;</div><div class="line">    <span class="keyword">var</span> oSrcTagName = e.target.tagName;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(e.target.tagName)   <span class="comment">// 返回点击元素的标签名</span></div><div class="line">    <span class="built_in">console</span>.log(e.target)           <span class="comment">// 指点击的元素</span></div><div class="line">    <span class="built_in">console</span>.log(e.currentTarget);   <span class="comment">// 指ul</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>【AJAX是在浏览器和服务器之间架一层AJAX引擎作过滤，筛选】</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ajax</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jsonp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">angular2</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -234,95 +193,17 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2014/12/15/AJAX笔记/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2015/03/15/jQuery记忆与问题/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          jQuery记忆与问题（面试笔试有用）
-        
-      </div>
-    </a>
   
   
-    <a href="/2014/12/15/JS进阶/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JS基础笔记（面试笔试有用）</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-    <div class="duoshuo"></div>
+    </div></section>
   
 
-
+    
 
 
           </div>
@@ -346,9 +227,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

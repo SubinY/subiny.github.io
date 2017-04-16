@@ -141,6 +141,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/">彻底理解原型链 (prototype chain)和Simple JavaScript Inheritance</a>
+    </h1>
+  
+
+        
+        <a href="/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/" class="archive-article-date">
+  	<time datetime="2016-11-22T10:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="彻底理解原型链-prototype-chain"><a href="#彻底理解原型链-prototype-chain" class="headerlink" title="彻底理解原型链 (prototype chain)"></a>彻底理解原型链 (prototype chain)</h2><p>在 ECMAScript 中，每个由构造器创建的对象拥有一个指向构造器 prototype 属性值的 隐式引用（implicit reference），这个引用称之为 原型（prototype）。进一步，每个原型可以拥有指向自己原型的 隐式引用（即该原型的原型），如此下去，这就是所谓的 原型链（prototype chain） （参考资源）。在具体的语言实现中，每个对象都有一个 <strong>proto</strong> 属性来实现对原型的 隐式引用。程序清单 4说明了这一点。</p>
+<p>清单 4. 对象的 <strong>proto</strong> 属性和隐式引用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"> name </span>) </span>&#123; <span class="keyword">this</span>.name = name; &#125;</div><div class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</div><div class="line"><span class="comment">//对象的隐式引用指向了构造器的 prototype 属性，所以此处打印 true</span></div><div class="line"><span class="built_in">console</span>.log( p.__proto__ === Person.prototype );</div><div class="line"><span class="comment">//原型本身是一个 Object 对象，所以他的隐式引用指向了</span></div><div class="line"><span class="comment">// Object 构造器的 prototype 属性 , 故而打印 true</span></div><div class="line"><span class="built_in">console</span>.log(Person.prototype.__proto__ === <span class="built_in">Object</span>.prototype );</div><div class="line"><span class="comment">// 构造器 Person 本身是一个函数对象，所以此处打印 true</span></div><div class="line"><span class="built_in">console</span>.log( Person.__proto__ === <span class="built_in">Function</span>.prototype );</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/工作记录/" class="article-tag-list-link color5">工作记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/22/彻底理解原型链-prototype-chain-和Simple-JavaScript-Inheritance/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-使用angular做微信内html5开发时碰到的两个坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -204,81 +280,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2016/06/28/使用angular做微信内html5开发时碰到的两个坑/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-bash命令和vi编辑器命令汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/02/bash命令和vi编辑器命令汇总/">bash命令和vi编辑器命令汇总</a>
-    </h1>
-  
-
-        
-        <a href="/2015/11/02/bash命令和vi编辑器命令汇总/" class="archive-article-date">
-  	<time datetime="2015-11-02T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>bash命令（Linux 默认使用 bash，Git内置了bash）<br>
-        
-          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工作记录/" class="article-tag-list-link color5">工作记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/">展开全文 >></a>
         </p>
       
 
@@ -371,29 +372,29 @@
 
 
   
-    <article id="post-setInterval的返回值类型为什么为数值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-bash命令和vi编辑器命令汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/15/setInterval的返回值类型为什么为数值/">setInterval的返回值类型为什么为数值?</a>
+      <a class="article-title" href="/2015/11/02/bash命令和vi编辑器命令汇总/">bash命令和vi编辑器命令汇总</a>
     </h1>
   
 
         
-        <a href="/2015/10/15/setInterval的返回值类型为什么为数值/" class="archive-article-date">
-  	<time datetime="2015-10-15T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-15</time>
+        <a href="/2015/11/02/bash命令和vi编辑器命令汇总/" class="archive-article-date">
+  	<time datetime="2015-11-02T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">btn[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> timer = <span class="literal">null</span>;</div><div class="line">  timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'a'</span>);</div><div class="line">  &#125;,<span class="number">1000</span>)</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);  <span class="comment">//返回的是一个number数据类型</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>bash命令（Linux 默认使用 bash，Git内置了bash）<br>
         
-          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/#more">more >></a>
+          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/#more">more >></a>
         
       
 
@@ -407,11 +408,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -423,7 +420,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端面试/" class="article-tag-list-link color5">前端面试</a>
+        			<a href="/categories/工作记录/" class="article-tag-list-link color5">工作记录</a>
         		</li>
       		
 		</ul>
@@ -432,7 +429,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/">展开全文 >></a>
+          <a class="article-more-a" href="/2015/11/02/bash命令和vi编辑器命令汇总/">展开全文 >></a>
         </p>
       
 
@@ -513,6 +510,85 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2015/10/15/JS中实际上有六种数据类型（解释NULL和Object的关系）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-setInterval的返回值类型为什么为数值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/15/setInterval的返回值类型为什么为数值/">setInterval的返回值类型为什么为数值?</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/15/setInterval的返回值类型为什么为数值/" class="archive-article-date">
+  	<time datetime="2015-10-15T00:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">btn[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> timer = <span class="literal">null</span>;</div><div class="line">  timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'a'</span>);</div><div class="line">  &#125;,<span class="number">1000</span>)</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);  <span class="comment">//返回的是一个number数据类型</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端面试/" class="article-tag-list-link color5">前端面试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/15/setInterval的返回值类型为什么为数值/">展开全文 >></a>
         </p>
       
 
@@ -761,19 +837,19 @@
 
 
   
-    <article id="post-【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-标签换行产生的间距消除的三种办法及子元素继承属性问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/03/【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】/">【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】</a>
+      <a class="article-title" href="/2015/08/03/标签换行产生的间距消除的三种办法及子元素继承属性问题/">标签换行产生的间距消除的三种办法及子元素继承属性问题</a>
     </h1>
   
 
         
-        <a href="/2015/08/03/【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】/" class="archive-article-date">
+        <a href="/2015/08/03/标签换行产生的间距消除的三种办法及子元素继承属性问题/" class="archive-article-date">
   	<time datetime="2015-08-03T04:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-03</time>
 </a>
         
@@ -781,10 +857,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、两个同级元素，垂直排列，上面的盒子给margin-bottom，同时下面的盒子给margin-top,那么他们两个盒子的<br>外边距就会重叠，以最大的那个值进行计算；<br>2、两个父子元素，内部的盒子给margin-top，然后其父级也会受到影响，同时产生上边距,不会得到想要结果，</p>
-<p>解决的办法<br>
+        <p>消除标签间距办法</p>
+<p>1、在父盒子设置font-size:0;自身盒子设置原来字体大小；</p>
+<p>2、float:left;</p>
+<p>3、直接写成一行。</p>
         
-          <a class="article-more-a" href="/2015/08/03/【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】/#more">more >></a>
+          <a class="article-more-a" href="/2015/08/03/标签换行产生的间距消除的三种办法及子元素继承属性问题/#more">more >></a>
         
       
 
@@ -819,82 +897,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/08/03/【外边距塌陷】【设置浮动都会变成行内块级元素】【行内元素本身能设置内外边距】/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-关于CSS通配符-问题（危害）及重置写法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/03/关于CSS通配符-问题（危害）及重置写法/">关于CSS通配符*问题（危害）及重置写法</a>
-    </h1>
-  
-
-        
-        <a href="/2015/08/03/关于CSS通配符-问题（危害）及重置写法/" class="archive-article-date">
-  	<time datetime="2015-08-03T04:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于CSS通配符<em>问题<br>　　A:不知道为什么css没有哦找到 用css 通配符“</em>”的案例呢？<br>　　Q:一般用来消除浏览器默认属性<br>　　在大多数时 候，我们需要重置浏览器元素，在dushuwu.net中介绍过很多相关的知识，但尽可能少使用全局Reset，因为不同浏览器元素的默认属性有所 不同，使用Reset可重置浏览器元素的一些默认属性，以达到浏览器的兼容。但需要注意的是，请不要使用全局Reset：<br>
-        
-          <a class="article-more-a" href="/2015/08/03/关于CSS通配符-问题（危害）及重置写法/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日常记录/" class="article-tag-list-link color5">日常记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/08/03/关于CSS通配符-问题（危害）及重置写法/">展开全文 >></a>
+          <a class="article-more-a" href="/2015/08/03/标签换行产生的间距消除的三种办法及子元素继承属性问题/">展开全文 >></a>
         </p>
       
 
@@ -998,7 +1001,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS，WebStrome</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1010,19 +1013,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML，CSS，WebStrome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1030,11 +1021,27 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">jQ轮播图</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1046,10 +1053,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">jQ轮播图</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">angular</a>
               </li>
              
@@ -1058,15 +1061,27 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">笔试面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">sublime</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">调试工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1078,15 +1093,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">调试工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">sublime</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
+                <a href="javascript:void(0)" class="js-tag color4">angular2</a>
               </li>
             
             <div class="clearfix"></div>
